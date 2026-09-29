@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Teatro José González Echeverría | Fresnillo Explora</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f3ee;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #173f35;
+    padding: 16px 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    height: 480px;
+    background:
+        linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.65)),
+        url("TEATRO ECHEVERRIA.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    padding: 35px 25px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    line-height: 1.1;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.contenido {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 22px;
+}
+
+.seccion {
+    margin-bottom: 45px;
+}
+
+.seccion h2 {
+    color: #173f35;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.seccion p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.dato {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.boton {
+    display: inline-block;
+    background: #173f35;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+footer {
+    background: #173f35;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 420px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html">← Volver a Fresnillo Explora</a>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Teatro José González Echeverría</h1>
+        <p>Fresnillo, Zacatecas</p>
+    </div>
+</section>
+
+<main class="contenido">
+
+<section class="seccion">
+    <h2>🎭 Historia</h2>
+
+    <p>
+        El Teatro José González Echeverría es uno de los inmuebles
+        culturales más representativos de Fresnillo y forma parte
+        del patrimonio histórico y arquitectónico de la ciudad.
+    </p>
+
+    <p>
+        Su historia está vinculada con el desarrollo cultural de
+        Fresnillo y con la necesidad de contar con un espacio destinado
+        a la presentación de espectáculos, actividades artísticas y
+        reuniones de la sociedad fresnillense.
+    </p>
+
+    <p>
+        El inmueble lleva el nombre de José González Echeverría,
+        personaje estrechamente relacionado con la historia de
+        Fresnillo durante el siglo XIX y con una etapa de importante
+        desarrollo de la ciudad.
+    </p>
+
+    <p>
+        A través del tiempo, el teatro se ha convertido en uno de los
+        símbolos culturales del centro de Fresnillo. Su arquitectura
+        exterior y la disposición de su sala interior lo distinguen
+        entre los edificios históricos de la ciudad.
+    </p>
+</section>
+
+<section class="seccion dato">
+    <h2>💡 Datos interesantes</h2>
+
+    <p>
+        🎭 <strong>Es uno de los espacios culturales históricos de Fresnillo:</strong>
+        durante distintas etapas ha servido como punto de encuentro para
+        actividades artísticas y culturales.
+    </p>
+
+    <p>
+        🏛️ <strong>Su arquitectura es parte de su atractivo:</strong>
+        la fachada y el interior del inmueble conservan una imagen
+        característica que lo distingue dentro del centro de la ciudad.
+    </p>
+
+    <p>
+        👤 <strong>Lleva el nombre de José González Echeverría:</strong>
+        una figura importante en la historia de Fresnillo durante
+        el siglo XIX.
+    </p>
+
+    <p>
+        🎶 <strong>Es un espacio dedicado a las artes:</strong>
+        su historia está relacionada con representaciones escénicas,
+        música y diferentes manifestaciones culturales.
+    </p>
+
+    <p>
+        📍 <strong>Forma parte del patrimonio del centro de Fresnillo:</strong>
+        su ubicación permite incluirlo dentro de un recorrido por
+        varios de los principales edificios históricos de la ciudad.
+    </p>
+</section>
+
+<section class="seccion">
+    <h2>📸 Galería</h2>
+
+    <div class="galeria">
+        <img src="TEATRO ECHEVERRIA.jpeg"
+             alt="Exterior del Teatro José González Echeverría">
+
+        <img src="TEATRO E. INTERIOR.jpeg"
+             alt="Interior del Teatro José González Echeverría">
+    </div>
+</section>
+
+<section class="seccion">
+    <h2>📍 Visita el Teatro José González Echeverría</h2>
+
+    <p>
+        Conoce uno de los espacios históricos y culturales
+        más representativos del centro de Fresnillo, Zacatecas.
+    </p>
+
+    <a class="boton"
+       href="https://www.google.com/maps/search/?api=1&query=Teatro+Jose+Gonzalez+Echeverria+Fresnillo+Zacatecas"
+       target="_blank">
+        Ver ubicación en Google Maps
+    </a>
+</section>
+
+</main>
+
+<footer>
+    <h3>Fresnillo Explora</h3>
+    <p>Descubre nuestra historia.</p>
+</footer>
+
+</body>
+</html>
