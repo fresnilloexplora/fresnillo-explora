@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fresnillo Explora</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f3ee;
+    color: #222;
+}
+
+header {
+    background: #173f35;
+    color: white;
+    padding: 18px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.hero {
+    position: relative;
+    height: 430px;
+    background-image:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.60)),
+        url("AGORA.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 25px;
+}
+
+.hero h2 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 650px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo-seccion h2 {
+    font-size: 32px;
+    color: #173f35;
+}
+
+.titulo-seccion p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.lugares {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0,0,0,.12);
+    transition: .3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 22px;
+}
+
+.info h3 {
+    color: #173f35;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 18px;
+    background: #173f35;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+
+.galeria img {
+    height: 180px;
+}
+
+footer {
+    background: #173f35;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+
+@media (min-width: 750px) {
+    .lugares {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        height: 520px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Fresnillo Explora</h1>
+    <p>Historia · Cultura · Tradición</p>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Descubre Fresnillo</h2>
+
+        <p>
+            Explora la historia, cultura y patrimonio de uno de los
+            municipios más representativos de Zacatecas.
+        </p>
+    </div>
+</section>
+
+<main class="container">
+
+<div class="titulo-seccion">
+    <h2>Explora nuestros lugares</h2>
+
+    <p>
+        Conoce algunos de los sitios históricos y culturales
+        más representativos de Fresnillo.
+    </p>
+</div>
+
+<section class="lugares">
+
+<!-- ÁGORA -->
+
+<article class="tarjeta">
+
+    <div class="galeria">
+        <img src="AGORA.jpeg"
+             alt="Ágora José González Echeverría">
+
+        <img src="AGORA INTERIOR.jpeg"
+             alt="Interior del Ágora">
+    </div>
+
+    <div class="info">
+        <h3>Ágora José González Echeverría</h3>
+
+        <p>
+            Descubre uno de los edificios históricos y culturales
+            más emblemáticos de Fresnillo.
+        </p>
+
+        <a class="boton" href="agora.html">
+            Conocer su historia →
+        </a>
+    </div>
+
+</article>
+
+
+<!-- PURIFICACIÓN -->
+
+<article class="tarjeta">
+
+    <img src="PURIFICACIÓN.jpeg"
+         alt="Templo de la Purificación">
+
+    <div class="info">
+        <h3>Templo de la Purificación</h3>
+
+        <p>
+            Arquitectura, tradición e historia en uno de los
+            templos más representativos de Fresnillo.
+        </p>
+
+        <a class="boton" href="purificacion.html">
+            Explorar →
+        </a>
+    </div>
+
+</article>
+
+
+<!-- TEATRO -->
+
+<article class="tarjeta">
+
+    <div class="galeria">
+
+        <img src="TEATRO ECHEVERRIA.jpeg"
+             alt="Teatro José González Echeverría">
+
+        <img src="TEATRO E. INTERIOR.jpeg"
+             alt="Interior del Teatro José González Echeverría">
+
+    </div>
+
+    <div class="info">
+
+        <h3>Teatro José González Echeverría</h3>
+
+        <p>
+            Un espacio histórico dedicado a la cultura y las artes
+            en el corazón de Fresnillo.
+        </p>
+
+        <a class="boton" href="teatro.html">
+            Conocer más →
+        </a>
+
+    </div>
+
+</article>
+
+
+<!-- HISTORIA MINERA -->
+
+<article class="tarjeta">
+
+    <div class="galeria">
+
+        <img src="MINERA.jpeg"
+             alt="Historia minera de Fresnillo">
+
+        <img src="MINERA INTERIOR.jpeg"
+             alt="Patrimonio minero de Fresnillo">
+
+    </div>
+
+    <div class="info">
+
+        <h3>Historia Minera</h3>
+
+        <p>
+            Conoce la actividad que ha marcado la identidad,
+            economía e historia de Fresnillo durante siglos.
+        </p>
+
+        <a class="boton" href="mineria.html">
+            Explorar minería →
+        </a>
+
+    </div>
+
+</article>
+
+</section>
+
+</main>
+
+<footer>
+    <h3>Fresnillo Explora</h3>
+    <p>Descubre la historia de Fresnillo, Zacatecas.</p>
+</footer>
+
+</body>
+</html>
