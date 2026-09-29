@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Fresnillo Explora</title>
+<title>Historia Minera | Fresnillo Explora</title>
 
 <style>
 * {
@@ -17,129 +17,92 @@ body {
     font-family: Arial, sans-serif;
     background: #f5f3ee;
     color: #222;
+    line-height: 1.6;
 }
 
 header {
     background: #173f35;
+    padding: 16px 20px;
+}
+
+header a {
     color: white;
-    padding: 18px 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 28px;
-}
-
-header p {
-    margin-top: 5px;
-    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .hero {
-    position: relative;
-    height: 430px;
-    background-image:
-        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.60)),
-        url("AGORA.jpeg");
+    height: 480px;
+    background:
+        linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.65)),
+        url("MINERA.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: flex-end;
     color: white;
-    padding: 25px;
+    padding: 35px 25px;
 }
 
-.hero h2 {
-    font-size: 46px;
-    margin-bottom: 10px;
+.hero h1 {
+    font-size: 38px;
+    line-height: 1.1;
 }
 
 .hero p {
-    font-size: 19px;
-    max-width: 650px;
-    line-height: 1.5;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 50px 20px;
-}
-
-.titulo-seccion {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-.titulo-seccion h2 {
-    font-size: 32px;
-    color: #173f35;
-}
-
-.titulo-seccion p {
     margin-top: 10px;
-    color: #666;
+    font-size: 17px;
 }
 
-.lugares {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
+.contenido {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 22px;
 }
 
-.tarjeta {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 18px rgba(0,0,0,.12);
-    transition: .3s;
+.seccion {
+    margin-bottom: 45px;
 }
 
-.tarjeta:hover {
-    transform: translateY(-5px);
-}
-
-.tarjeta img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-}
-
-.info {
-    padding: 22px;
-}
-
-.info h3 {
+.seccion h2 {
     color: #173f35;
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 27px;
+    margin-bottom: 15px;
 }
 
-.info p {
-    color: #555;
-    line-height: 1.5;
+.seccion p {
+    font-size: 17px;
+    margin-bottom: 15px;
 }
 
-.boton {
-    display: inline-block;
-    margin-top: 18px;
-    background: #173f35;
-    color: white;
-    padding: 11px 20px;
-    border-radius: 25px;
-    text-decoration: none;
+.dato {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
 }
 
 .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4px;
+    gap: 8px;
 }
 
 .galeria img {
-    height: 180px;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.boton {
+    display: inline-block;
+    background: #173f35;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 30px;
+    margin-top: 10px;
 }
 
 footer {
@@ -147,16 +110,19 @@ footer {
     color: white;
     text-align: center;
     padding: 30px 20px;
-    margin-top: 30px;
 }
 
-@media (min-width: 750px) {
-    .lugares {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 600px) {
+    .hero {
+        height: 420px;
     }
 
-    .hero {
-        height: 520px;
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
     }
 }
 </style>
@@ -165,120 +131,94 @@ footer {
 <body>
 
 <header>
-    <h1>Fresnillo Explora</h1>
-    <p>Historia · Cultura · Tradición</p>
+    <a href="index.html">← Volver a Fresnillo Explora</a>
 </header>
 
 <section class="hero">
     <div>
-        <h2>Descubre Fresnillo</h2>
-
-        <p>
-            Explora la historia, cultura y patrimonio de uno de los
-            municipios más representativos de Zacatecas.
-        </p>
+        <h1>Historia Minera de Fresnillo</h1>
+        <p>Una identidad forjada entre plata, trabajo e historia</p>
     </div>
 </section>
 
-<main class="container">
+<main class="contenido">
 
-<div class="titulo-seccion">
-    <h2>Explora nuestros lugares</h2>
+<section class="seccion">
+    <h2>⛏️ Historia minera</h2>
 
     <p>
-        Conoce algunos de los sitios históricos y culturales
-        más representativos de Fresnillo.
+        La historia de Fresnillo está profundamente ligada a la minería.
+        Entre 1551 y 1552, Diego Fernández de Proaño exploró esta región
+        en busca de yacimientos minerales y encontró evidencias de mineral
+        en el cerro que posteriormente llevaría su apellido:
+        el Cerro de Proaño.
     </p>
-</div>
 
-<section class="lugares">
+    <p>
+        El descubrimiento de importantes vetas minerales contribuyó
+        posteriormente al establecimiento y crecimiento de Fresnillo.
+        La actividad minera se convirtió en uno de los principales
+        motores económicos de la región.
+    </p>
 
-<!-- ÁGORA -->
+    <p>
+        Durante los siglos siguientes, la extracción de plata y otros
+        minerales marcó profundamente el desarrollo de la ciudad.
+        Generaciones de trabajadores y familias han formado parte de
+        una tradición minera que continúa siendo uno de los elementos
+        más representativos de la identidad fresnillense.
+    </p>
 
-<article class="tarjeta">
-
-    <div class="galeria">
-        <img src="AGORA.jpeg"
-             alt="Ágora José González Echeverría">
-
-        <img src="AGORA INTERIOR.jpeg"
-             alt="Interior del Ágora">
-    </div>
-
-    <div class="info">
-        <h3>Ágora José González Echeverría</h3>
-
-        <p>
-            Descubre uno de los edificios históricos y culturales
-            más emblemáticos de Fresnillo.
-        </p>
-
-        <a class="boton" href="agora.html">
-            Conocer su historia →
-        </a>
-    </div>
-
-</article>
+    <p>
+        El Cerro de Proaño se convirtió así en uno de los grandes
+        símbolos históricos de Fresnillo y en una referencia inseparable
+        de la historia de la ciudad.
+    </p>
+</section>
 
 
-<!-- PURIFICACIÓN -->
+<section class="seccion dato">
 
-<article class="tarjeta">
+    <h2>💡 Datos interesantes</h2>
 
-    <img src="PURIFICACIÓN.jpeg"
-         alt="Templo de la Purificación">
+    <p>
+        ⛏️ <strong>Una historia de más de cuatro siglos:</strong>
+        las primeras exploraciones españolas que identificaron mineral
+        en el Cerro de Proaño se remontan al siglo XVI.
+    </p>
 
-    <div class="info">
-        <h3>Templo de la Purificación</h3>
+    <p>
+        🪨 <strong>El origen del nombre Proaño:</strong>
+        el cerro recibió su nombre por Diego Fernández de Proaño,
+        uno de los primeros exploradores españoles relacionados
+        con el descubrimiento de mineral en la zona.
+    </p>
 
-        <p>
-            Arquitectura, tradición e historia en uno de los
-            templos más representativos de Fresnillo.
-        </p>
+    <p>
+        🥈 <strong>La plata marcó el desarrollo de Fresnillo:</strong>
+        la riqueza mineral de la región contribuyó al crecimiento
+        económico y urbano de la ciudad durante distintas épocas.
+    </p>
 
-        <a class="boton" href="purificacion.html">
-            Explorar →
-        </a>
-    </div>
+    <p>
+        🛠️ <strong>La minería aparece en los símbolos de Fresnillo:</strong>
+        el Cerro de Proaño y herramientas relacionadas con el trabajo
+        minero forman parte de la representación histórica del municipio.
+    </p>
 
-</article>
+    <p>
+        👷 <strong>Una tradición de generaciones:</strong>
+        la actividad minera no solamente ha tenido importancia económica;
+        también ha influido en la cultura, las familias y la identidad
+        de Fresnillo.
+    </p>
 
-
-<!-- TEATRO -->
-
-<article class="tarjeta">
-
-    <div class="galeria">
-
-        <img src="TEATRO ECHEVERRIA.jpeg"
-             alt="Teatro José González Echeverría">
-
-        <img src="TEATRO E. INTERIOR.jpeg"
-             alt="Interior del Teatro José González Echeverría">
-
-    </div>
-
-    <div class="info">
-
-        <h3>Teatro José González Echeverría</h3>
-
-        <p>
-            Un espacio histórico dedicado a la cultura y las artes
-            en el corazón de Fresnillo.
-        </p>
-
-        <a class="boton" href="teatro.html">
-            Conocer más →
-        </a>
-
-    </div>
-
-</article>
+</section>
 
 
-<!-- HISTORIA MINERA -->
+<section class="seccion">
 
-<article class="tarjeta">
+    <h2>📸 Galería</h2>
 
     <div class="galeria">
 
@@ -290,30 +230,32 @@ footer {
 
     </div>
 
-    <div class="info">
+</section>
 
-        <h3>Historia Minera</h3>
 
-        <p>
-            Conoce la actividad que ha marcado la identidad,
-            economía e historia de Fresnillo durante siglos.
-        </p>
+<section class="seccion">
 
-        <a class="boton" href="mineria.html">
-            Explorar minería →
-        </a>
+    <h2>📍 Cerro de Proaño</h2>
 
-    </div>
+    <p>
+        El Cerro de Proaño es uno de los principales referentes
+        históricos de la tradición minera de Fresnillo, Zacatecas.
+    </p>
 
-</article>
+    <a class="boton"
+       href="https://www.google.com/maps/search/?api=1&query=Cerro+de+Proano+Fresnillo+Zacatecas"
+       target="_blank">
+        Ver ubicación en Google Maps
+    </a>
 
 </section>
 
 </main>
 
+
 <footer>
     <h3>Fresnillo Explora</h3>
-    <p>Descubre la historia de Fresnillo, Zacatecas.</p>
+    <p>Descubre nuestra historia.</p>
 </footer>
 
 </body>
